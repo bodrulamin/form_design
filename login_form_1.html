@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #eee;
+             
+        }
+
+        form {
+            width: 300px;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+
+        input {
+            display: block;
+           
+
+        }
+
+        input[type=text] {
+            width: 100%;
+
+        }
+
+        input[type=button] {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5px;
+            background-color: green;
+            color: white;
+            padding: 5px 10px 5px 10px;
+            border-radius: 10px;
+            border: 0px;
+            box-shadow: 0 0 10px #40ff068a;
+
+        }
+
+        input[type=button]:hover {
+            box-shadow: 0 0 10px red;
+
+        }
+
+        fieldset {
+            background-color: white;
+            border-radius: 5px;
+            border: 0px solid black;
+            box-shadow: 0px 0px 5px black;
+        }
+
+        legend {
+
+            background-color: black;
+            color: white;
+            padding: 5px 10px 5px 10px;
+            border-radius: 1em;
+            margin: auto;
+            font-weight: bold;
+        }
+
+        label {
+            margin-top: 15px;
+            display: block;
+
+        }
+        .newhere{
+            width: max-content;
+            margin: 10px auto 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="#">
+        <fieldset>
+            <legend>Login</legend>
+
+            <label>User Name</label> <input type="text" name="username" id="username">
+            <label>Password</label> <input type="text" name="userpass " id="userpass">
+            <input type="button" name="submitBtn " id="submitBtn" value="Login">
+            <div class="newhere"> New here? <a href="#">Register</a>
+            </div>
+        </fieldset>
+    </form>
+
+
+
+</body>
+
+</html>
