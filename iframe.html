@@ -17,29 +17,24 @@
 
     a {
         text-decoration: none;
-       background: grey;
+        background: grey;
         color: white;
         padding: 20px 5px 20px 5px;
         border-radius: 1em;
         display: block;
         margin: 10px;
         text-align: center;
-
     }
-    a:hover{
+
+    a:hover {
         background-color: green;
-
     }
-
-  
-
  
-
     .col-25 {
         width: 25%;
-         float: left;
-         background-color: #eee;
-         height: 800px;
+        float: left;
+        background-color: #eee;
+        height: 800px;
     }
 
     .col-75 {
@@ -53,40 +48,36 @@
     <div class="row">
         <div class="col-25">
 
-            <a id="b1"   href="https://www.jugantor.com" target="myframe">Jugantor</a>
-            <a id="b2"  href="https://www.dailyinqilab.com" target="myframe">Daily Inqilab</a>
-            <a id="b3"  href="https://www.prothomalo.com" target="myframe">Prothom alo</a>
+            <a id="b1" href="https://www.jugantor.com" target="myframe">Jugantor</a>
+            <a id="b2" href="https://www.dailyinqilab.com" target="myframe">Daily Inqilab</a>
+            <a id="b3" href="https://www.prothomalo.com" target="myframe">Prothom alo</a>
         </div>
 
 
         <div class="col-75">
-            <iframe name="myframe" srcdoc="<h1> Click link at the left to see page inside iframe</h1>" frameborder="0"></iframe>
+            <iframe name="myframe" srcdoc="<h1> Click link at the left to see page inside iframe</h1>"
+                frameborder="0"></iframe>
         </div>
 
 
     </div>
 
-
-
-
-
-
- 
-<script>
-    function btnClicked(){
-     document.getElementById('b1'). style.backgroundColor= "grey";
-    document.getElementById('b2'). style.backgroundColor= "grey";
-    document.getElementById('b3'). style.backgroundColor= "grey";
-     this.style.backgroundColor= "green";
-
-         
-    }
-
-    document.getElementById('b1').onclick = btnClicked;
-    document.getElementById('b2').onclick = btnClicked;
-    document.getElementById('b3').onclick = btnClicked;
+    <script>
+        function btnClicked(){
+         document.getElementById('b1'). style.backgroundColor= "grey";
+        document.getElementById('b2'). style.backgroundColor= "grey";
+        document.getElementById('b3'). style.backgroundColor= "grey";
+         this.style.backgroundColor= "green";
     
-</script>
+             
+        }
+    
+        document.getElementById('b1').onclick = btnClicked;
+        document.getElementById('b2').onclick = btnClicked;
+        document.getElementById('b3').onclick = btnClicked;
+        
+    </script>
+
 </body>
 
 </html>
