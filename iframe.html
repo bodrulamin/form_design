@@ -17,7 +17,7 @@
 
     a {
         text-decoration: none;
-        background: grey;
+       
         color: white;
         padding: 20px 5px 20px 5px;
         border-radius: 1em;
@@ -33,8 +33,7 @@
     .col-25 {
         width: 25%;
         float: left;
-        background-color: #eee;
-        height: 800px;
+         height: 800px;
     }
 
     .col-75 {
@@ -47,9 +46,9 @@
 
     <div class="row">
         <div class="col-25">
-            <a id="b1" href="https://www.jugantor.com" target="myframe">Jugantor</a>
-            <a id="b2" href="https://www.dailyinqilab.com" target="myframe">Daily Inqilab</a>
-            <a id="b3" href="https://www.prothomalo.com" target="myframe">Prothom alo</a>
+            <a id="b1" onclick="btnClicked(this)" href="https://www.jugantor.com" target="myframe">Jugantor</a>
+            <a id="b2" onclick="btnClicked(this)" href="https://www.dailyinqilab.com" target="myframe">Daily Inqilab</a>
+            <a id="b3" onclick="btnClicked(this)" href="https://www.prothomalo.com" target="myframe">Prothom alo</a>
         </div>
 
 
@@ -62,18 +61,18 @@
     </div>
 
     <script>
-        function btnClicked(){
-         document.getElementById('b1'). style.backgroundColor= "grey";
-        document.getElementById('b2'). style.backgroundColor= "grey";
-        document.getElementById('b3'). style.backgroundColor= "grey";
-         this.style.backgroundColor= "green";
+        function btnClicked(btn){
+         document.getElementById('b1'). style.backgroundColor= "teal";
+        document.getElementById('b2'). style.backgroundColor= "teal";
+        document.getElementById('b3'). style.backgroundColor= "teal";
+        btn.style.backgroundColor= "green";
     
              
         }
     
-        document.getElementById('b1').onclick = btnClicked;
-        document.getElementById('b2').onclick = btnClicked;
-        document.getElementById('b3').onclick = btnClicked;
+        document.getElementById('b1'). style.backgroundColor= "teal";
+        document.getElementById('b2'). style.backgroundColor= "teal";
+        document.getElementById('b3'). style.backgroundColor= "teal";
         
     </script>
 
