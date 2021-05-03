@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+
+        .inputbox {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+         <div class="inputbox">
+            <label for="">ID</label>
+            <input id="id" onkeyup="validateId(this.value,idMsg)" />
+            <span id="idMsg"></span>
+        </div>
+
+        <div class="inputbox">
+
+            <label for="">Name</label>
+            <input id="name" onkeyup="validateName(this.value,nameMsg)" />
+            <span id="nameMsg"></span>
+        </div>
+        <div class="inputbox">
+            <label for="">Mobile</label>
+            <input id="mobile" onkeyup="validateMob(this.value,mobMsg)" />
+            <span id="mobMsg"></span>
+        </div>
+        <div class="inputbox">
+            <label for="">Address</label>
+            <input id="address" onkeyup="validateAddress(this.value,addMsg)" />
+            <span id="addMsg"></span>
+        </div>
+        <div class="inputbox">
+            <label for="">Gender</label>
+            <input type="radio" name="gender" id="male"  />Male
+            <input type="radio" name="gender" id="female"  />Female
+        </div>
+
+
+        <button >Submit</button>
+
+ 
+    <script>
+      
+        function validateId(value,span){
+            var reg = /^[0-9]{6}$/;            
+               
+            if(reg.test(value)){
+                console.log('valid');
+                span.innerHTML = "";
+            }else{
+                console.log('invalid');
+                span.innerHTML = "it is invalid";
+            }
+
+        }
+ 
+        function validateName(value,span){
+            var reg = /^[a-zA-Z\s]{4,16}$/;
+
+            if(reg.test(value)){
+                console.log('valid');
+                span.innerHTML = "";
+
+            }else{
+                console.log('invalid');
+                span.innerHTML = "insert valid name (4-16 charecter)";
+            }
+
+        }
+ 
+        function validateMob(value,span){
+            var reg = /^[0-9]{11}$/;
+
+            if(reg.test(value)){
+                console.log('valid');
+                span.innerHTML = "";
+            }else{
+                console.log('invalid');
+                span.innerHTML = "insert correct mobile no (11 digits)";
+            }
+
+        }
+  
+        function validateAddress(value,span){
+            var reg = /^[a-zA-Z0-9\s.-]+$/;
+
+            if(reg.test(value)){
+                console.log('valid');
+                span.innerHTML = "";
+            }else{
+                console.log('invalid');
+                span.innerHTML = "please insert valid address";
+            }
+
+        }
+ 
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        var n = 5;
+        isPrime(n);
+        function isPrime(n) {
+            var dcount = 0;
+            // 8
+            // 12345678  ||||
+            // kotobar vag jay
+            for (var i = 1; i <= n; i++) {
+                if (n % i == 0) {
+                    dcount += 1;                   
+                }
+            }
+
+            if (dcount == 2) {
+                console.log(n + " is prime");
+            } else {
+                console.log(n + " is not prime");
+            }
+        }
+
+
+
+        // //  45
+        // //   2,3,4,5,  44 
+
+        // var n = 50;
+        // var result = isPrime(n);
+         
+        // if(result){
+        //     console.log(n + " is a prime number");
+        // }else{
+        //     console.log(n + " is not a prime number");
+        // }
+
+        // function isPrime(n) {
+        //     if (n <= 1) {
+        
+            
+        //         return false;
+        //     }
+
+        //     var dcount = 0;
+        //     for (var i = 2; i < n; i++) {
+        //         if (n % i == 0) {
+        //             dcount += 1;
+        //         }
+        //     }
+
+        //     if (dcount >= 1) {
+        //         return false
+        //     } else {
+        //         return true;
+        //     }
+
+        // }
+
+/*
+
+        ID
+        Name
+        Mobile 
+        Address
+        email
+        Gender: 
+        submit: success full or error message
+
+
+
+
+
+*/
+    </script>
+</body>
+
+</html>

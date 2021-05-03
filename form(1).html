@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    tr{
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+    table{
+        margin: auto;
+        text-align: center;
+
+    }
+   div{
+       margin-top: 5%;
+       margin-bottom: 30%;
+       margin-left: 30%;
+       margin-right: 30%;
+       text-align: center;
+       background-color: aqua;
+       padding: 5px 10px 5px 10px;
+      
+   }
+</style>
+
+   
+
+<body>
+   <div> 
+    <h2>Creat Your Account</h2>
+    <table>
+       
+            <tr>
+                <td> <label>Id</label> </td>
+                <td> <input type="text" id="d1"> </td>
+            </tr>
+
+            <tr>
+                <td><label>Name</label></td>
+                <td><input type="text" id="n1"></td>
+            </tr>
+
+            <tr>
+                <td> <label>Mobile</label> </td>
+                <td> <input type="text" id="m1"></td>
+            </tr>
+
+            <tr>
+                <td> <label>Address</label></td>
+                <td><textarea id="a1"></textarea></td>
+            </tr>
+
+            <tr>
+                <td> <label>Email</label></td>
+                <td><input type="text" id="e1"></td>
+            </tr>
+
+            <tr>
+                <td><label>Gender</label> </td>
+                <td>
+                    <input type="radio" value="male" name="gender" id="gm">male
+                    <input type="radio" value="female" name="gender" id="gf">Female  
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="submit" id="success" onclick="creat()" ></td>
+            </tr>
+
+    </table>
+</div>
+<script>
+    function creat(){
+        var id = document.getElementById("d1").value;
+        var name = document.getElementById("n1").value;
+        var mobile = document.getElementById("m1").value;
+        var address = document.getElementById("a1").value;
+        var email = document.getElementById("e1").value;
+            //validations requred code
+        if (id=='' || name=='' || mobile=='' || address=='' ||email=='' ){
+            alert("Please Enter Each Details Correctly");
+        }else{
+            alert("Thanks For Successfully filup Your Details");
+        }
+
+    }
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -17,7 +17,7 @@
 
     a {
         text-decoration: none;
-       
+
         color: white;
         padding: 20px 5px 20px 5px;
         border-radius: 1em;
@@ -29,11 +29,11 @@
     a:hover {
         background-color: green;
     }
- 
+
     .col-25 {
         width: 25%;
         float: left;
-         height: 800px;
+        height: 800px;
     }
 
     .col-75 {
@@ -61,19 +61,31 @@
     </div>
 
     <script>
-        function btnClicked(btn){
-         document.getElementById('b1'). style.backgroundColor= "teal";
-        document.getElementById('b2'). style.backgroundColor= "teal";
-        document.getElementById('b3'). style.backgroundColor= "teal";
-        btn.style.backgroundColor= "green";
-    
-             
+        function btnClicked(btn) {
+            c('b1', 'teal');
+            c('b2', 'teal');
+            c('b3', 'teal');
+            c(btn.id, 'green');
+
+
         }
-    
-        document.getElementById('b1'). style.backgroundColor= "teal";
-        document.getElementById('b2'). style.backgroundColor= "teal";
-        document.getElementById('b3'). style.backgroundColor= "teal";
-        
+
+        c('b1', 'teal');
+        c('b2', 'teal');
+        c('b3', 'teal');
+
+
+
+        function g(i) {
+            return document.getElementById(i);
+         
+        }
+
+        function c(i, c) {
+            g(i).style.backgroundColor = c;
+        }
+
+
     </script>
 
 </body>
